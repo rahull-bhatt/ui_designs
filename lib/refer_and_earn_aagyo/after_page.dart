@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:ui_designs/refer_and_earn_aagyo/view_more_page.dart';
 import 'package:ui_designs/skeleton_effects/aagyo_customers/home_page_skeleton.dart';
 
 class AfterPageRefer extends StatelessWidget {
@@ -15,12 +16,12 @@ class AfterPageRefer extends StatelessWidget {
           onTap: () => Get.back(),
           child: Icon(Icons.arrow_back_ios_new, color: Colors.black),
         ),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 10),
-            child: Icon(Icons.more_vert, color: Colors.black),
-          ),
-        ],
+        // actions: [
+        //   Padding(
+        //     padding: const EdgeInsets.only(right: 10),
+        //     child: Icon(Icons.more_vert, color: Colors.black),
+        //   ),
+        // ],
       ),
       backgroundColor: Colors.white,
       body: ListView(
@@ -79,7 +80,7 @@ Widget inviteContainer() {
   return Stack(
     children: [
       Container(
-        height: 135,
+        // height: 135,
         width: double.infinity,
         decoration: BoxDecoration(color: Colors.blue.shade50),
         child: Padding(
@@ -88,10 +89,10 @@ Widget inviteContainer() {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Refer a friend and earn ₹21",
+                "Refer a friend and \nearn ₹21",
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
               ),
-              SizedBox(height: 45),
+              SizedBox(height: 25),
               Container(
                 height: 40,
                 width: 130,
@@ -101,6 +102,7 @@ Widget inviteContainer() {
                 ),
                 child: Center(child: Text("Invite friends")),
               ),
+              SizedBox(height: 25),
             ],
           ),
         ),
@@ -109,8 +111,8 @@ Widget inviteContainer() {
         bottom: -15,
         right: 0,
         child: SizedBox(
-          height: 130,
-            width: 130,
+          height: 170,
+            width: 170,
             child: Image.asset('images/referandearn.png', fit: BoxFit.contain,)
         ),
       )],
@@ -212,12 +214,15 @@ Widget referralInfoContainer() {
               ),
               Padding(
                 padding: const EdgeInsets.only(right: 15),
-                child: Text(
-                  'View all',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 12,
-                    color: Colors.black,
+                child: InkWell(
+                  onTap: () => Get.to(ViewMorePage()),
+                  child: Text(
+                    'View all',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 12,
+                      color: Colors.black,
+                    ),
                   ),
                 ),
               ),
