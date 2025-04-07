@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ui_designs/refer_and_earn_aagyo/refer_page_first_screen.dart';
-import 'package:ui_designs/skeleton_effects/aagyo_customers/cart_skeleton.dart';
-import 'package:ui_designs/skeleton_effects/aagyo_customers/home_page_skeleton.dart';
-import 'package:ui_designs/skeleton_effects/aagyo_customers/orders_skeleton.dart';
-import 'package:ui_designs/skeleton_effects/aagyo_customers/other_skeletons.dart';
-import 'package:ui_designs/skeleton_effects/aagyo_customers/single_store_skeleton.dart';
-import 'package:ui_designs/skeleton_effects/aagyo_customers/store_mainpage_skeleton.dart';
-import 'package:ui_designs/skeleton_effects/aagyo_customers/your_orderskeleton.dart';
-import 'package:ui_designs/skeleton_effects/aagyo_vendors/order_transaction_skeleton.dart';
+import 'package:ui_designs/skeleton_effects/aagyo_vendors/allorders_page.dart';
+import 'package:ui_designs/skeleton_effects/aagyo_vendors/dashboard_home_skull.dart';
+import 'package:ui_designs/skeleton_effects/aagyo_vendors/order_vendors_skeleton.dart';
+import 'package:ui_designs/skeleton_effects/aagyo_vendors/store_details_skull.dart';
 
 void main() {
   runApp(MyApp());
@@ -21,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: YourOrderSkeleton(),
+      home: StoreDetailsSkeletonPage(),
     );
   }
 }
