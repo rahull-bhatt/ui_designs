@@ -23,8 +23,8 @@ class CartSkeleton extends StatelessWidget {
         backgroundColor: Colors.white,
       ),
       body: Shimmer.fromColors(
-        baseColor: Colors.grey[300]!,
-        highlightColor: Colors.grey[100]!,
+        baseColor: Colors.grey[400]!,
+        highlightColor: Colors.grey[500]!,
         child: Padding(
           padding: EdgeInsets.symmetric(vertical: 15, horizontal: 10),
           child: Column(
