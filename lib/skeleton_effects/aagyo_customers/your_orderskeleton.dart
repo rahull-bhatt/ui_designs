@@ -27,7 +27,7 @@ class YourOrderSkeleton extends StatelessWidget {
         padding: EdgeInsets.only(top: 10),
         child: Shimmer.fromColors(
           baseColor: Colors.grey[300]!,
-          highlightColor: Colors.grey[100]!,
+          highlightColor: Colors.grey[400]!,
           child: ListView.builder(
             shrinkWrap: true,
             physics: NeverScrollableScrollPhysics(),

@@ -54,8 +54,8 @@ class StorePageMainSkeleton extends StatelessWidget {
         backgroundColor: Colors.white,
       ),
       body: Shimmer.fromColors(
-        baseColor: Colors.grey[300]!,
-        highlightColor: Colors.grey[100]!,
+        baseColor: Colors.grey[400]!,
+        highlightColor: Colors.grey[600]!,
         child: wholeStorePageView(),
       ),
     );

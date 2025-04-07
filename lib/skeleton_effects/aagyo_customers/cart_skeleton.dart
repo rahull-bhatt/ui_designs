@@ -14,7 +14,7 @@ class CartSkeleton extends StatelessWidget {
         titleSpacing: 0,
         leading: Icon(Icons.arrow_back_ios_new),
         title: Text(
-          "CHECKOUT",
+          "CART",
           style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
         ),
         shape: OutlineInputBorder(
@@ -24,7 +24,7 @@ class CartSkeleton extends StatelessWidget {
       ),
       body: Shimmer.fromColors(
         baseColor: Colors.grey[400]!,
-        highlightColor: Colors.grey[500]!,
+        highlightColor: Colors.grey[600]!,
         child: Padding(
           padding: EdgeInsets.symmetric(vertical: 15, horizontal: 10),
           child: Column(

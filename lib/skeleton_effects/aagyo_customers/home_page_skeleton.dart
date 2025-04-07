@@ -11,7 +11,7 @@ class HomePageSkeleton extends StatelessWidget {
       appBar: AppBar(toolbarHeight: 5, backgroundColor: Colors.white),
       body: Shimmer.fromColors(
         baseColor: Colors.grey[400]!,
-        highlightColor: Colors.grey[500]!,
+        highlightColor: Colors.grey[600]!,
         child: ListView(
           shrinkWrap: false,
           physics: NeverScrollableScrollPhysics(),

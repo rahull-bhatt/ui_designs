@@ -24,7 +24,7 @@ class OrdersSkeleton extends StatelessWidget {
       ),
       body: Shimmer.fromColors(
         baseColor: Colors.grey[300]!,
-        highlightColor: Colors.grey[100]!,
+        highlightColor: Colors.grey[400]!,
         child: Padding(
           padding: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
           child: ListView(
