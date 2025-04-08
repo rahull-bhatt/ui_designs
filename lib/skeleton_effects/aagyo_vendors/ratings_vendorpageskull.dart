@@ -8,6 +8,7 @@ class RatingsVendorPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         surfaceTintColor: Colors.white,
         titleSpacing: 0,
@@ -85,7 +86,7 @@ class RatingsVendorPage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Padding(
-                            padding: const EdgeInsets.only(left: 2),
+                            padding: const EdgeInsets.only(left: 2,top: 5),
                             child: skeletonContainer(
                               height: 15,
                               width: 100,
@@ -96,6 +97,7 @@ class RatingsVendorPage extends StatelessWidget {
                           ratingItemRow(),
                           SizedBox(height: 1),
                           ratingItemRow(),
+                          SizedBox(height: 8),
                         ],
                       ),
                     ),
