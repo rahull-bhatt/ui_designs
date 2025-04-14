@@ -15,7 +15,7 @@ class OrderDetailsSkeleton extends StatelessWidget {
         titleSpacing: 0,
         leading: Icon(Icons.arrow_back_ios_new),
         title: Text(
-          "Order Transaction",
+          "Order Details",
           style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
         ),
         shape: OutlineInputBorder(

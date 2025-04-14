@@ -14,7 +14,7 @@ class AllOrdersPage extends StatelessWidget {
         titleSpacing: 0,
         leading: Icon(Icons.arrow_back_ios_new),
         title: Text(
-          "All Order",
+          "Order Transaction",
           style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
         ),
         shape: OutlineInputBorder(

@@ -160,28 +160,31 @@ Widget wholeStorePageView({int? itemCount}) {
 Widget categorySkeletonStore({int? itemCount}) {
   return Align(
     alignment: AlignmentDirectional.topStart,
-    child: ListView.builder(
-      physics: NeverScrollableScrollPhysics(),
-      shrinkWrap: true,
-      itemCount: itemCount ?? 6,
-      itemBuilder: (context, index) {
-        return Padding(
-          padding: EdgeInsets.only(bottom: 15),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 5, vertical: 2),
-                child: skeletonContainer(height: 60, width: 60, radius: 60,skullColor: false),
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 13, vertical: 5),
-                child: skeletonContainer(height: 8, width: 45, radius: 2,skullColor: false),
-              ),
-            ],
-          ),
-        );
-      },
+    child: Padding(
+      padding: const EdgeInsets.only(top: 5),
+      child: ListView.builder(
+        physics: NeverScrollableScrollPhysics(),
+        shrinkWrap: true,
+        itemCount: itemCount ?? 6,
+        itemBuilder: (context, index) {
+          return Padding(
+            padding: EdgeInsets.only(bottom: 15),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 5, vertical: 2),
+                  child: skeletonContainer(height: 60, width: 60, radius: 60,skullColor: false),
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 13, vertical: 5),
+                  child: skeletonContainer(height: 8, width: 45, radius: 2,skullColor: false),
+                ),
+              ],
+            ),
+          );
+        },
+      ),
     ),
   );
 }
